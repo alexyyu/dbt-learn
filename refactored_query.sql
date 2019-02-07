@@ -31,13 +31,13 @@ and (orders.is_cancelled_order = false OR orders.is_pending_order != true)
 group by completed_at_date),
 
 select
-a.completed_at_date,
-a.gross_rev,
-a.net_rev,
-b.qty,
-a.order_count as orders,
-b.qty/a.distinct_orders as avg_unit_per_order,
-a.Gross_Rev/a.distinct_orders as aov_gross,
-a.Net_Rev/a.distinct_orders as aov_net
+completed_at_date as date,
+gross_rev,
+net_rev as net_sales,
+qty,
+order_count as orders,
+qty/a.distinct_orders as avg_unit_per_order,
+Gross_Rev/a.distinct_orders as aov_gross,
+Net_Rev/a.distinct_orders as aov_net
 from a left join b using (completed_at_date)
 where a.net_rev >= 150000
