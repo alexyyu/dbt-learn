@@ -1,0 +1,235 @@
+2019-02-07 10:17:49,823 (MainThread): Tracking: tracking
+2019-02-07 10:17:49,825 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB64D28D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB64D2A58>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB64D2828>]}
+2019-02-07 10:17:49,928 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-07 10:17:49,935 (MainThread): Loading dependency project from C:\Users\yichy\dbt-learn\dbt_modules
+2019-02-07 10:17:49,947 (MainThread): Parsing macros\core.sql
+2019-02-07 10:17:49,960 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-07 10:17:49,968 (MainThread): Parsing macros\adapters\common.sql
+2019-02-07 10:17:49,981 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-07 10:17:49,990 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-07 10:17:49,992 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-07 10:17:49,994 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-07 10:17:50,005 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-07 10:17:50,008 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-07 10:17:50,009 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-07 10:17:50,019 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-07 10:17:50,022 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-07 10:17:50,030 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-07 10:17:50,057 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-07 10:17:50,061 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-07 10:17:50,068 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-07 10:17:50,077 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-07 10:17:50,080 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-07 10:17:50,095 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-07 10:17:50,103 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-07 10:17:50,112 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-07 10:17:50,120 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-07 10:17:50,128 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-07 10:17:50,136 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-07 10:17:50,137 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-07 10:17:50,138 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-07 10:17:50,140 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-07 10:17:50,141 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-07 10:17:50,143 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-07 10:17:50,145 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-07 10:17:50,146 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-07 10:17:50,153 (MainThread): Parsing macros\core.sql
+2019-02-07 10:17:50,157 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-07 10:17:50,160 (MainThread): Parsing macros\adapters\common.sql
+2019-02-07 10:17:50,168 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-07 10:17:50,174 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-07 10:17:50,175 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-07 10:17:50,177 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-07 10:17:50,182 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-07 10:17:50,184 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-07 10:17:50,184 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-07 10:17:50,191 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-07 10:17:50,193 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-07 10:17:50,199 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-07 10:17:50,218 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-07 10:17:50,222 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-07 10:17:50,227 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-07 10:17:50,235 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-07 10:17:50,237 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-07 10:17:50,249 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-07 10:17:50,257 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-07 10:17:50,265 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-07 10:17:50,275 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-07 10:17:50,288 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-07 10:17:50,295 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-07 10:17:50,296 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-07 10:17:50,297 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-07 10:17:50,299 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-07 10:17:50,300 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-07 10:17:50,301 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-07 10:17:50,302 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-07 10:17:50,303 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-07 10:17:50,305 (MainThread): Parsing model.dbt_learn.my_first_dbt_model
+2019-02-07 10:17:50,341 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_package.example
+
+2019-02-07 10:17:50,345 (MainThread): Found 1 models, 0 tests, 0 archives, 0 analyses, 94 macros, 2 operations, 0 seed files
+2019-02-07 10:17:50,347 (MainThread): 
+2019-02-07 10:17:50,347 (MainThread): Acquiring new redshift connection "master".
+2019-02-07 10:17:50,347 (MainThread): Opening a new connection (0 currently allocated)
+2019-02-07 10:17:50,348 (MainThread): Connecting to Redshift using 'database' credentials
+2019-02-07 10:17:51,093 (MainThread): Using redshift connection "master".
+2019-02-07 10:17:51,094 (MainThread): On master: select tablename as name, schemaname as schema, 'table' as type from pg_tables
+        where schemaname ilike 'dbt_alex'
+        union all
+        select viewname as name, schemaname as schema, 'view' as type from pg_views
+        where schemaname ilike 'dbt_alex'
+2019-02-07 10:17:51,152 (MainThread): SQL status: SELECT in 0.06 seconds
+2019-02-07 10:17:51,196 (MainThread): Acquiring new redshift connection "get_relations_data".
+2019-02-07 10:17:51,196 (MainThread): Opening a new connection (1 currently allocated)
+2019-02-07 10:17:51,197 (MainThread): Connecting to Redshift using 'database' credentials
+2019-02-07 10:17:51,345 (MainThread): Using redshift connection "get_relations_data".
+2019-02-07 10:17:51,345 (MainThread): On get_relations_data: BEGIN
+2019-02-07 10:17:51,385 (MainThread): SQL status: BEGIN in 0.04 seconds
+2019-02-07 10:17:51,385 (MainThread): Using redshift connection "get_relations_data".
+2019-02-07 10:17:51,385 (MainThread): On get_relations_data: -- 
+    with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg_%'
+    ),
+    relationships as (
+        select
+            referenced_class.name as referenced_name,
+            referenced_class.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced_class.kind as kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        join dependency on relation.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            referenced_class.kind in ('r', 'v') and
+            (referenced_class.name != dependent_class.name or
+             referenced_class.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2019-02-07 10:17:51,431 (MainThread): SQL status: SELECT in 0.05 seconds
+2019-02-07 10:17:51,441 (MainThread): On get_relations_data: ROLLBACK
+2019-02-07 10:17:51,462 (MainThread): Using redshift connection "master".
+2019-02-07 10:17:51,462 (MainThread): On master: select distinct nspname from pg_namespace
+2019-02-07 10:17:51,483 (MainThread): SQL status: SELECT in 0.02 seconds
+2019-02-07 10:17:51,483 (MainThread): 10:17:51 | Concurrency: 4 threads (target='dev')
+2019-02-07 10:17:51,483 (MainThread): 10:17:51 | 
+2019-02-07 10:17:51,488 (Thread-1): 10:17:51 | 1 of 1 START view model dbt_alex.my_first_dbt_model.................. [RUN]
+2019-02-07 10:17:51,489 (Thread-1): Compiling model.dbt_learn.my_first_dbt_model
+2019-02-07 10:17:51,493 (Thread-1): Writing injected SQL for node "model.dbt_learn.my_first_dbt_model"
+2019-02-07 10:17:51,536 (Thread-1): Acquiring new redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,536 (Thread-1): Re-using an available connection from the pool.
+2019-02-07 10:17:51,537 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,537 (Thread-1): On my_first_dbt_model: BEGIN
+2019-02-07 10:17:51,577 (Thread-1): SQL status: BEGIN in 0.04 seconds
+2019-02-07 10:17:51,578 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,578 (Thread-1): On my_first_dbt_model: drop view if exists "dbt_alex"."my_first_dbt_model__dbt_tmp" cascade
+2019-02-07 10:17:51,599 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2019-02-07 10:17:51,599 (Thread-1): On my_first_dbt_model: COMMIT
+2019-02-07 10:17:51,599 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,599 (Thread-1): On my_first_dbt_model: COMMIT
+2019-02-07 10:17:51,683 (Thread-1): SQL status: COMMIT in 0.08 seconds
+2019-02-07 10:17:51,683 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,683 (Thread-1): On my_first_dbt_model: BEGIN
+2019-02-07 10:17:51,702 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-07 10:17:51,703 (Thread-1): On my_first_dbt_model: COMMIT
+2019-02-07 10:17:51,703 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,703 (Thread-1): On my_first_dbt_model: COMMIT
+2019-02-07 10:17:51,722 (Thread-1): SQL status: COMMIT in 0.02 seconds
+2019-02-07 10:17:51,722 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,722 (Thread-1): On my_first_dbt_model: BEGIN
+2019-02-07 10:17:51,742 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-07 10:17:51,743 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,743 (Thread-1): On my_first_dbt_model: drop view if exists "dbt_alex"."my_first_dbt_model__dbt_backup" cascade
+2019-02-07 10:17:51,763 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2019-02-07 10:17:51,764 (Thread-1): On my_first_dbt_model: COMMIT
+2019-02-07 10:17:51,764 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,764 (Thread-1): On my_first_dbt_model: COMMIT
+2019-02-07 10:17:51,856 (Thread-1): SQL status: COMMIT in 0.09 seconds
+2019-02-07 10:17:51,857 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,857 (Thread-1): On my_first_dbt_model: BEGIN
+2019-02-07 10:17:51,878 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-07 10:17:51,891 (Thread-1): Writing runtime SQL for node "model.dbt_learn.my_first_dbt_model"
+2019-02-07 10:17:51,897 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,897 (Thread-1): On my_first_dbt_model: 
+
+  create view "dbt_alex"."my_first_dbt_model__dbt_tmp" as (
+    -- Welcome to your first dbt model!
+-- Did you know that you can also configure models directly within
+-- the SQL file? This will override configurations stated in dbt_project.yml
+
+-- Try changing 'view' to 'table', then re-running dbt
+
+
+
+select 1 as id
+  ) ;
+2019-02-07 10:17:51,990 (Thread-1): SQL status: CREATE VIEW in 0.09 seconds
+2019-02-07 10:17:51,992 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:51,992 (Thread-1): On my_first_dbt_model: alter table "dbt_alex"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+2019-02-07 10:17:52,015 (Thread-1): SQL status: ALTER TABLE in 0.02 seconds
+2019-02-07 10:17:52,015 (Thread-1): On my_first_dbt_model: COMMIT
+2019-02-07 10:17:52,015 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:52,015 (Thread-1): On my_first_dbt_model: COMMIT
+2019-02-07 10:17:52,418 (Thread-1): SQL status: COMMIT in 0.40 seconds
+2019-02-07 10:17:52,419 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:52,419 (Thread-1): On my_first_dbt_model: BEGIN
+2019-02-07 10:17:52,436 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-07 10:17:52,437 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:52,437 (Thread-1): On my_first_dbt_model: drop view if exists "dbt_alex"."my_first_dbt_model__dbt_backup" cascade
+2019-02-07 10:17:52,457 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2019-02-07 10:17:52,458 (Thread-1): On my_first_dbt_model: COMMIT
+2019-02-07 10:17:52,458 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:52,458 (Thread-1): On my_first_dbt_model: COMMIT
+2019-02-07 10:17:52,558 (Thread-1): SQL status: COMMIT in 0.10 seconds
+2019-02-07 10:17:52,558 (Thread-1): Using redshift connection "my_first_dbt_model".
+2019-02-07 10:17:52,558 (Thread-1): On my_first_dbt_model: BEGIN
+2019-02-07 10:17:52,577 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-07 10:17:52,579 (Thread-1): On my_first_dbt_model: ROLLBACK
+2019-02-07 10:17:52,600 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e125455c-11ed-4dfe-8433-c24c9c77c599', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB443FF98>]}
+2019-02-07 10:17:52,691 (Thread-1): 10:17:52 | 1 of 1 OK created view model dbt_alex.my_first_dbt_model............. [CREATE VIEW in 1.11s]
+2019-02-07 10:17:52,699 (MainThread): 10:17:52 | 
+2019-02-07 10:17:52,700 (MainThread): 10:17:52 | Finished running 1 view models in 2.35s.
+2019-02-07 10:17:52,700 (MainThread): Connection 'master' was left open.
+2019-02-07 10:17:52,710 (MainThread): 
+2019-02-07 10:17:52,711 (MainThread): Completed successfully
+2019-02-07 10:17:52,712 (MainThread): 
+Done. PASS=1 ERROR=0 SKIP=0 TOTAL=1
+2019-02-07 10:17:52,712 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB48C36A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB3C25518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB64B0358>]}
+2019-02-07 10:17:52,799 (MainThread): Flushing usage events
