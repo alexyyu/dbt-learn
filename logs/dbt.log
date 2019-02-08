@@ -1,0 +1,567 @@
+2019-02-07 15:47:06,638 (MainThread): Tracking: tracking
+2019-02-07 15:47:06,639 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F89D32240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F89D323C8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F89D32630>]}
+2019-02-07 15:47:06,780 (MainThread): Warning: No packages were found in packages.yml
+2019-02-07 15:47:06,781 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F89B5EA20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F874A94A8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F89D1DB00>]}
+2019-02-07 15:47:06,884 (MainThread): Flushing usage events
+2019-02-07 15:47:34,283 (MainThread): Tracking: tracking
+2019-02-07 15:47:34,283 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD1CFD2668>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD1CFD27F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD1CFD22E8>]}
+2019-02-07 15:47:34,815 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD1CFBD7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD1CFBD7B8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD1CFBDDD8>]}
+2019-02-07 15:47:34,902 (MainThread): Flushing usage events
+2019-02-07 15:47:34,903 (MainThread): Encountered an error:
+2019-02-07 15:47:34,903 (MainThread): 'dict' object has no attribute 'packages'
+2019-02-07 15:47:34,906 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\deps.py", line 440, in run
+    sub_deps.incorporate_from_yaml(target_config.packages.packages)
+AttributeError: 'dict' object has no attribute 'packages'
+
+2019-02-07 15:49:14,600 (MainThread): Tracking: tracking
+2019-02-07 15:49:14,600 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220C38CF518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220C38CF9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220C38CF898>]}
+2019-02-07 15:49:15,421 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220C38C50B8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220C38C5198>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220C38C5D30>]}
+2019-02-07 15:49:15,516 (MainThread): Flushing usage events
+2019-02-07 15:49:15,517 (MainThread): Encountered an error:
+2019-02-07 15:49:15,517 (MainThread): 'dict' object has no attribute 'packages'
+2019-02-07 15:49:15,519 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\deps.py", line 440, in run
+    sub_deps.incorporate_from_yaml(target_config.packages.packages)
+AttributeError: 'dict' object has no attribute 'packages'
+
+2019-02-07 15:52:41,632 (MainThread): Tracking: tracking
+2019-02-07 15:52:41,632 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDF7AD2668>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDF7AD27F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDF7AD22E8>]}
+2019-02-07 15:52:42,125 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDF7ABCE48>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDF7ABC160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DDF7ABC9B0>]}
+2019-02-07 15:52:42,217 (MainThread): Flushing usage events
+2019-02-07 15:52:42,217 (MainThread): Encountered an error:
+2019-02-07 15:52:42,217 (MainThread): 'dict' object has no attribute 'packages'
+2019-02-07 15:52:42,219 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\deps.py", line 440, in run
+    sub_deps.incorporate_from_yaml(target_config.packages.packages)
+AttributeError: 'dict' object has no attribute 'packages'
+
+2019-02-07 15:53:02,480 (MainThread): Tracking: tracking
+2019-02-07 15:53:02,481 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D2970940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D2970D68>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D2970198>]}
+2019-02-07 15:53:03,002 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D29662B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D2966C18>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D2966DD8>]}
+2019-02-07 15:53:03,103 (MainThread): Flushing usage events
+2019-02-07 15:53:03,103 (MainThread): Encountered an error:
+2019-02-07 15:53:03,103 (MainThread): 'dict' object has no attribute 'packages'
+2019-02-07 15:53:03,105 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\deps.py", line 440, in run
+    sub_deps.incorporate_from_yaml(target_config.packages.packages)
+AttributeError: 'dict' object has no attribute 'packages'
+
+2019-02-07 15:53:28,819 (MainThread): Tracking: tracking
+2019-02-07 15:53:28,820 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7C1E12B38>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7C1E12240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7C1E12470>]}
+2019-02-07 15:53:28,918 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-07 15:53:28,926 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-07 15:53:28,936 (MainThread): Parsing macros\core.sql
+2019-02-07 15:53:28,945 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-07 15:53:28,952 (MainThread): Parsing macros\adapters\common.sql
+2019-02-07 15:53:28,966 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-07 15:53:28,975 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-07 15:53:28,978 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-07 15:53:28,980 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-07 15:53:28,989 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-07 15:53:28,992 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-07 15:53:28,994 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-07 15:53:29,006 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-07 15:53:29,009 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-07 15:53:29,018 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-07 15:53:29,047 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-07 15:53:29,052 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-07 15:53:29,058 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-07 15:53:29,068 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-07 15:53:29,071 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-07 15:53:29,087 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-07 15:53:29,097 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-07 15:53:29,106 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-07 15:53:29,115 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-07 15:53:29,126 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-07 15:53:29,134 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-07 15:53:29,135 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-07 15:53:29,137 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-07 15:53:29,139 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-07 15:53:29,141 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-07 15:53:29,143 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-07 15:53:29,145 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-07 15:53:29,147 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-07 15:53:29,154 (MainThread): Parsing macros\core.sql
+2019-02-07 15:53:29,158 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-07 15:53:29,161 (MainThread): Parsing macros\adapters\common.sql
+2019-02-07 15:53:29,170 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-07 15:53:29,176 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-07 15:53:29,178 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-07 15:53:29,179 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-07 15:53:29,185 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-07 15:53:29,187 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-07 15:53:29,188 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-07 15:53:29,195 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-07 15:53:29,197 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-07 15:53:29,203 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-07 15:53:29,225 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-07 15:53:29,228 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-07 15:53:29,234 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-07 15:53:29,242 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-07 15:53:29,245 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-07 15:53:29,258 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-07 15:53:29,266 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-07 15:53:29,276 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-07 15:53:29,284 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-07 15:53:29,291 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-07 15:53:29,299 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-07 15:53:29,301 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-07 15:53:29,302 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-07 15:53:29,303 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-07 15:53:29,304 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-07 15:53:29,306 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-07 15:53:29,307 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-07 15:53:29,308 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-07 15:53:29,311 (MainThread): Parsing model.dbt_learn.my_first_dbt_model
+2019-02-07 15:53:29,327 (MainThread): Parsing model.dbt_learn.util_calendar
+2019-02-07 15:53:29,362 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_package.example
+
+2019-02-07 15:53:29,366 (MainThread): Found 2 models, 0 tests, 0 archives, 0 analyses, 94 macros, 2 operations, 0 seed files
+2019-02-07 15:53:29,368 (MainThread): 
+2019-02-07 15:53:29,368 (MainThread): Acquiring new redshift connection "master".
+2019-02-07 15:53:29,368 (MainThread): Opening a new connection (0 currently allocated)
+2019-02-07 15:53:29,369 (MainThread): Connecting to Redshift using 'database' credentials
+2019-02-07 15:53:30,095 (MainThread): Using redshift connection "master".
+2019-02-07 15:53:30,095 (MainThread): On master: select tablename as name, schemaname as schema, 'table' as type from pg_tables
+        where schemaname ilike 'dbt_alex'
+        union all
+        select viewname as name, schemaname as schema, 'view' as type from pg_views
+        where schemaname ilike 'dbt_alex'
+2019-02-07 15:53:30,144 (MainThread): SQL status: SELECT in 0.05 seconds
+2019-02-07 15:53:30,188 (MainThread): Acquiring new redshift connection "get_relations_data".
+2019-02-07 15:53:30,189 (MainThread): Opening a new connection (1 currently allocated)
+2019-02-07 15:53:30,189 (MainThread): Connecting to Redshift using 'database' credentials
+2019-02-07 15:53:30,333 (MainThread): Using redshift connection "get_relations_data".
+2019-02-07 15:53:30,333 (MainThread): On get_relations_data: BEGIN
+2019-02-07 15:53:30,371 (MainThread): SQL status: BEGIN in 0.04 seconds
+2019-02-07 15:53:30,372 (MainThread): Using redshift connection "get_relations_data".
+2019-02-07 15:53:30,372 (MainThread): On get_relations_data: -- 
+    with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg_%'
+    ),
+    relationships as (
+        select
+            referenced_class.name as referenced_name,
+            referenced_class.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced_class.kind as kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        join dependency on relation.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            referenced_class.kind in ('r', 'v') and
+            (referenced_class.name != dependent_class.name or
+             referenced_class.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2019-02-07 15:53:30,420 (MainThread): SQL status: SELECT in 0.05 seconds
+2019-02-07 15:53:30,429 (MainThread): On get_relations_data: ROLLBACK
+2019-02-07 15:53:30,449 (MainThread): Using redshift connection "master".
+2019-02-07 15:53:30,449 (MainThread): On master: select distinct nspname from pg_namespace
+2019-02-07 15:53:30,467 (MainThread): SQL status: SELECT in 0.02 seconds
+2019-02-07 15:53:30,467 (MainThread): 15:53:30 | Concurrency: 4 threads (target='dev')
+2019-02-07 15:53:30,467 (MainThread): 15:53:30 | 
+2019-02-07 15:53:30,471 (Thread-1): 15:53:30 | 1 of 2 START view model dbt_alex.util_calendar....................... [RUN]
+2019-02-07 15:53:30,472 (Thread-1): Compiling model.dbt_learn.util_calendar
+2019-02-07 15:53:30,471 (Thread-2): 15:53:30 | 2 of 2 START view model dbt_alex.my_first_dbt_model.................. [RUN]
+2019-02-07 15:53:30,477 (Thread-2): Compiling model.dbt_learn.my_first_dbt_model
+2019-02-07 15:53:30,480 (Thread-2): Writing injected SQL for node "model.dbt_learn.my_first_dbt_model"
+2019-02-07 15:53:30,484 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25a24275-f946-4e25-9b76-9e0b41880ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7C1E83B00>]}
+2019-02-07 15:53:30,523 (Thread-2): Acquiring new redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,523 (Thread-2): Re-using an available connection from the pool.
+2019-02-07 15:53:30,523 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,524 (Thread-2): On my_first_dbt_model: BEGIN
+2019-02-07 15:53:30,565 (Thread-2): SQL status: BEGIN in 0.04 seconds
+2019-02-07 15:53:30,566 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,566 (Thread-2): On my_first_dbt_model: drop view if exists "dbt_alex"."my_first_dbt_model__dbt_tmp" cascade
+2019-02-07 15:53:30,588 (Thread-2): SQL status: DROP VIEW in 0.02 seconds
+2019-02-07 15:53:30,588 (Thread-2): On my_first_dbt_model: COMMIT
+2019-02-07 15:53:30,588 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,588 (Thread-2): On my_first_dbt_model: COMMIT
+2019-02-07 15:53:30,589 (Thread-1): 15:53:30 | 1 of 2 ERROR creating view model dbt_alex.util_calendar.............. [ERROR in 0.01s]
+2019-02-07 15:53:30,771 (Thread-2): SQL status: COMMIT in 0.18 seconds
+2019-02-07 15:53:30,771 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,771 (Thread-2): On my_first_dbt_model: BEGIN
+2019-02-07 15:53:30,790 (Thread-2): SQL status: BEGIN in 0.02 seconds
+2019-02-07 15:53:30,790 (Thread-2): On my_first_dbt_model: COMMIT
+2019-02-07 15:53:30,790 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,790 (Thread-2): On my_first_dbt_model: COMMIT
+2019-02-07 15:53:30,809 (Thread-2): SQL status: COMMIT in 0.02 seconds
+2019-02-07 15:53:30,810 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,810 (Thread-2): On my_first_dbt_model: BEGIN
+2019-02-07 15:53:30,830 (Thread-2): SQL status: BEGIN in 0.02 seconds
+2019-02-07 15:53:30,830 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,830 (Thread-2): On my_first_dbt_model: drop view if exists "dbt_alex"."my_first_dbt_model__dbt_backup" cascade
+2019-02-07 15:53:30,852 (Thread-2): SQL status: DROP VIEW in 0.02 seconds
+2019-02-07 15:53:30,852 (Thread-2): On my_first_dbt_model: COMMIT
+2019-02-07 15:53:30,852 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,852 (Thread-2): On my_first_dbt_model: COMMIT
+2019-02-07 15:53:30,943 (Thread-2): SQL status: COMMIT in 0.09 seconds
+2019-02-07 15:53:30,943 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,944 (Thread-2): On my_first_dbt_model: BEGIN
+2019-02-07 15:53:30,963 (Thread-2): SQL status: BEGIN in 0.02 seconds
+2019-02-07 15:53:30,979 (Thread-2): Writing runtime SQL for node "model.dbt_learn.my_first_dbt_model"
+2019-02-07 15:53:30,985 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:30,986 (Thread-2): On my_first_dbt_model: 
+
+  create view "dbt_alex"."my_first_dbt_model__dbt_tmp" as (
+    -- Welcome to your first dbt model!
+-- Did you know that you can also configure models directly within
+-- the SQL file? This will override configurations stated in dbt_project.yml
+
+-- Try changing 'view' to 'table', then re-running dbt
+
+
+
+select 1 as id
+  ) ;
+2019-02-07 15:53:31,070 (Thread-2): SQL status: CREATE VIEW in 0.08 seconds
+2019-02-07 15:53:31,073 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:31,073 (Thread-2): On my_first_dbt_model: alter table "dbt_alex"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+2019-02-07 15:53:31,094 (Thread-2): SQL status: ALTER TABLE in 0.02 seconds
+2019-02-07 15:53:31,095 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:31,095 (Thread-2): On my_first_dbt_model: alter table "dbt_alex"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+2019-02-07 15:53:31,115 (Thread-2): SQL status: ALTER TABLE in 0.02 seconds
+2019-02-07 15:53:31,115 (Thread-2): On my_first_dbt_model: COMMIT
+2019-02-07 15:53:31,115 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:31,115 (Thread-2): On my_first_dbt_model: COMMIT
+2019-02-07 15:53:31,240 (Thread-2): SQL status: COMMIT in 0.12 seconds
+2019-02-07 15:53:31,240 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:31,240 (Thread-2): On my_first_dbt_model: BEGIN
+2019-02-07 15:53:31,262 (Thread-2): SQL status: BEGIN in 0.02 seconds
+2019-02-07 15:53:31,262 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:31,262 (Thread-2): On my_first_dbt_model: drop view if exists "dbt_alex"."my_first_dbt_model__dbt_backup" cascade
+2019-02-07 15:53:31,285 (Thread-2): SQL status: DROP VIEW in 0.02 seconds
+2019-02-07 15:53:31,286 (Thread-2): On my_first_dbt_model: COMMIT
+2019-02-07 15:53:31,286 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:31,286 (Thread-2): On my_first_dbt_model: COMMIT
+2019-02-07 15:53:31,380 (Thread-2): SQL status: COMMIT in 0.09 seconds
+2019-02-07 15:53:31,381 (Thread-2): Using redshift connection "my_first_dbt_model".
+2019-02-07 15:53:31,381 (Thread-2): On my_first_dbt_model: BEGIN
+2019-02-07 15:53:31,401 (Thread-2): SQL status: BEGIN in 0.02 seconds
+2019-02-07 15:53:31,403 (Thread-2): On my_first_dbt_model: ROLLBACK
+2019-02-07 15:53:31,424 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25a24275-f946-4e25-9b76-9e0b41880ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7C1EB8AC8>]}
+2019-02-07 15:53:31,513 (Thread-2): 15:53:31 | 2 of 2 OK created view model dbt_alex.my_first_dbt_model............. [CREATE VIEW in 0.95s]
+2019-02-07 15:53:31,584 (MainThread): 15:53:31 | 
+2019-02-07 15:53:31,585 (MainThread): 15:53:31 | Finished running 2 view models in 2.22s.
+2019-02-07 15:53:31,585 (MainThread): Connection 'master' was left open.
+2019-02-07 15:53:31,593 (MainThread): 
+2019-02-07 15:53:31,594 (MainThread): Completed with 1 errors:
+2019-02-07 15:53:31,595 (MainThread): 
+2019-02-07 15:53:31,595 (MainThread): Compilation Error in model util_calendar (models\utils\util_calendar.sql)
+2019-02-07 15:53:31,596 (MainThread):   'dbt_utils' is undefined
+2019-02-07 15:53:31,596 (MainThread): 
+Done. PASS=1 ERROR=1 SKIP=0 TOTAL=2
+2019-02-07 15:53:31,596 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7BF586518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7C1E12B38>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7C1E12080>]}
+2019-02-07 15:53:31,694 (MainThread): Flushing usage events
+2019-02-07 15:53:50,312 (MainThread): Tracking: tracking
+2019-02-07 15:53:50,313 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020421DA2400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020421DA2860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020421DA2358>]}
+2019-02-07 15:53:50,750 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020421D8CB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020421D8C780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020421D8C4A8>]}
+2019-02-07 15:53:50,853 (MainThread): Flushing usage events
+2019-02-07 15:53:50,853 (MainThread): Encountered an error:
+2019-02-07 15:53:50,853 (MainThread): 'dict' object has no attribute 'packages'
+2019-02-07 15:53:50,855 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\deps.py", line 440, in run
+    sub_deps.incorporate_from_yaml(target_config.packages.packages)
+AttributeError: 'dict' object has no attribute 'packages'
+
+2019-02-07 15:54:43,672 (MainThread): Tracking: tracking
+2019-02-07 15:54:43,672 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C108D5828>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C108D5CF8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C108D53C8>]}
+2019-02-07 15:54:43,834 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0ECF64A8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0D124BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C0D124C88>]}
+2019-02-07 15:54:43,932 (MainThread): Flushing usage events
+2019-02-07 15:54:50,193 (MainThread): Tracking: tracking
+2019-02-07 15:54:50,194 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182613B2978>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182613B26A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182613B2438>]}
+2019-02-07 15:54:50,630 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001826139D898>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001826139D828>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001826139DE48>]}
+2019-02-07 15:54:50,728 (MainThread): Flushing usage events
+2019-02-07 15:54:50,728 (MainThread): Encountered an error:
+2019-02-07 15:54:50,728 (MainThread): 'dict' object has no attribute 'packages'
+2019-02-07 15:54:50,730 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\deps.py", line 440, in run
+    sub_deps.incorporate_from_yaml(target_config.packages.packages)
+AttributeError: 'dict' object has no attribute 'packages'
+
+2019-02-07 15:56:21,722 (MainThread): Tracking: tracking
+2019-02-07 15:56:21,722 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B12A221D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B12A22780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B12A22470>]}
+2019-02-07 15:56:25,539 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B12A17F28>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B12A17630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B12A17358>]}
+2019-02-07 15:56:25,631 (MainThread): Flushing usage events
+2019-02-07 15:56:25,631 (MainThread): Encountered an error:
+2019-02-07 15:56:25,632 (MainThread): 'dict' object has no attribute 'packages'
+2019-02-07 15:56:25,633 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\deps.py", line 440, in run
+    sub_deps.incorporate_from_yaml(target_config.packages.packages)
+AttributeError: 'dict' object has no attribute 'packages'
+
+2019-02-07 15:57:33,210 (MainThread): Tracking: tracking
+2019-02-07 15:57:33,211 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181EC162630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181EC1625F8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181EC1629E8>]}
+2019-02-07 15:57:33,382 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181EBFB6588>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181E89C60F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000181E97AB898>]}
+2019-02-07 15:57:33,480 (MainThread): Flushing usage events
+2019-02-07 15:57:46,517 (MainThread): Tracking: tracking
+2019-02-07 15:57:46,517 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD8CAD5C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD8CAD5CF8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD8CAD5E10>]}
+2019-02-07 15:57:46,991 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD8CADF390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD8CADFA20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD8CADFB70>]}
+2019-02-07 15:57:47,088 (MainThread): Flushing usage events
+2019-02-07 15:57:47,088 (MainThread): Encountered an error:
+2019-02-07 15:57:47,089 (MainThread): 'dict' object has no attribute 'packages'
+2019-02-07 15:57:47,090 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\deps.py", line 440, in run
+    sub_deps.incorporate_from_yaml(target_config.packages.packages)
+AttributeError: 'dict' object has no attribute 'packages'
+
+2019-02-08 09:34:40,538 (MainThread): Tracking: tracking
+2019-02-08 09:34:40,539 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1364F2518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1364F26A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1364F2160>]}
+2019-02-08 09:34:40,677 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 09:34:40,684 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 09:34:40,693 (MainThread): Parsing macros\core.sql
+2019-02-08 09:34:40,700 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 09:34:40,705 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 09:34:40,719 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 09:34:40,729 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 09:34:40,732 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 09:34:40,735 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 09:34:40,744 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 09:34:40,746 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 09:34:40,748 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 09:34:40,758 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 09:34:40,761 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 09:34:40,771 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 09:34:40,801 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 09:34:40,806 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 09:34:40,811 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 09:34:40,820 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 09:34:40,823 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 09:34:40,837 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 09:34:40,846 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 09:34:40,855 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 09:34:40,864 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 09:34:40,872 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 09:34:40,879 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 09:34:40,880 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 09:34:40,882 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 09:34:40,884 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 09:34:40,885 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 09:34:40,887 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 09:34:40,888 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 09:34:40,890 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 09:34:40,896 (MainThread): Parsing macros\core.sql
+2019-02-08 09:34:40,899 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 09:34:40,903 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 09:34:40,910 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 09:34:40,916 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 09:34:40,917 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 09:34:40,919 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 09:34:40,925 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 09:34:40,926 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 09:34:40,927 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 09:34:40,934 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 09:34:40,936 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 09:34:40,941 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 09:34:40,961 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 09:34:40,965 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 09:34:40,970 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 09:34:40,979 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 09:34:40,981 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 09:34:40,993 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 09:34:41,000 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 09:34:41,009 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 09:34:41,016 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 09:34:41,023 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 09:34:41,030 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 09:34:41,031 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 09:34:41,032 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 09:34:41,034 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 09:34:41,035 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 09:34:41,036 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 09:34:41,037 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 09:34:41,039 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 09:34:41,040 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 09:34:41,076 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_package.example
+
+2019-02-08 09:34:41,081 (MainThread): Found 1 models, 0 tests, 0 archives, 0 analyses, 94 macros, 2 operations, 0 seed files
+2019-02-08 09:34:41,083 (MainThread): 
+2019-02-08 09:34:41,083 (MainThread): 09:34:41 | Concurrency: 4 threads (target='dev')
+2019-02-08 09:34:41,084 (MainThread): 09:34:41 | 
+2019-02-08 09:34:41,087 (Thread-1): Compiling model.dbt_learn.property_type_by_zipcode
+2019-02-08 09:34:41,091 (Thread-1): Writing injected SQL for node "model.dbt_learn.property_type_by_zipcode"
+2019-02-08 09:34:41,192 (MainThread): 09:34:41 | Done.
+2019-02-08 09:34:41,193 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D133C67518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D132DF3908>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1364ECDA0>]}
+2019-02-08 09:34:41,292 (MainThread): Flushing usage events
+2019-02-08 09:36:47,828 (MainThread): Tracking: tracking
+2019-02-08 09:36:47,828 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE65B02048>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE65B02390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE65B02710>]}
+2019-02-08 09:36:47,962 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 09:36:47,969 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 09:36:47,975 (MainThread): Parsing macros\core.sql
+2019-02-08 09:36:47,980 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 09:36:47,985 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 09:36:47,997 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 09:36:48,004 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 09:36:48,006 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 09:36:48,008 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 09:36:48,016 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 09:36:48,018 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 09:36:48,020 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 09:36:48,028 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 09:36:48,031 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 09:36:48,038 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 09:36:48,062 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 09:36:48,067 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 09:36:48,073 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 09:36:48,083 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 09:36:48,086 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 09:36:48,100 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 09:36:48,109 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 09:36:48,118 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 09:36:48,126 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 09:36:48,136 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 09:36:48,143 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 09:36:48,144 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 09:36:48,146 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 09:36:48,148 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 09:36:48,149 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 09:36:48,151 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 09:36:48,153 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 09:36:48,154 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 09:36:48,162 (MainThread): Parsing macros\core.sql
+2019-02-08 09:36:48,166 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 09:36:48,169 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 09:36:48,179 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 09:36:48,185 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 09:36:48,187 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 09:36:48,188 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 09:36:48,194 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 09:36:48,196 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 09:36:48,197 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 09:36:48,204 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 09:36:48,206 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 09:36:48,211 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 09:36:48,232 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 09:36:48,236 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 09:36:48,241 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 09:36:48,250 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 09:36:48,252 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 09:36:48,266 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 09:36:48,274 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 09:36:48,282 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 09:36:48,291 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 09:36:48,299 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 09:36:48,305 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 09:36:48,307 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 09:36:48,308 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 09:36:48,310 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 09:36:48,310 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 09:36:48,312 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 09:36:48,313 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 09:36:48,315 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 09:36:48,317 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 09:36:48,357 (MainThread): Found 1 models, 0 tests, 0 archives, 0 analyses, 94 macros, 2 operations, 0 seed files
+2019-02-08 09:36:48,359 (MainThread): 
+2019-02-08 09:36:48,359 (MainThread): 09:36:48 | Concurrency: 4 threads (target='dev')
+2019-02-08 09:36:48,359 (MainThread): 09:36:48 | 
+2019-02-08 09:36:48,363 (Thread-1): Compiling model.dbt_learn.property_type_by_zipcode
+2019-02-08 09:36:48,368 (Thread-1): Writing injected SQL for node "model.dbt_learn.property_type_by_zipcode"
+2019-02-08 09:36:48,466 (MainThread): 09:36:48 | Done.
+2019-02-08 09:36:48,467 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE6234F320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE6234F278>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE6314C898>]}
+2019-02-08 09:36:48,554 (MainThread): Flushing usage events
