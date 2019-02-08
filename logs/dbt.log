@@ -233,3 +233,986 @@ select 1 as id
 Done. PASS=1 ERROR=0 SKIP=0 TOTAL=1
 2019-02-07 10:17:52,712 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB48C36A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB3C25518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AB64B0358>]}
 2019-02-07 10:17:52,799 (MainThread): Flushing usage events
+2019-02-08 10:45:46,855 (MainThread): Tracking: tracking
+2019-02-08 10:45:46,856 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236551E2550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236551E2160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236551E26D8>]}
+2019-02-08 10:45:47,032 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 10:45:47,037 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 10:45:47,043 (MainThread): Parsing macros\core.sql
+2019-02-08 10:45:47,048 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:45:47,053 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:45:47,065 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:45:47,072 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:45:47,074 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:45:47,075 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:45:47,083 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:45:47,085 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:45:47,086 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:45:47,093 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:45:47,095 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:45:47,102 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:45:47,132 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:45:47,137 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:45:47,143 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:45:47,153 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:45:47,156 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:45:47,170 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:45:47,189 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:45:47,197 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:45:47,206 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:45:47,214 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:45:47,221 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:45:47,222 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:45:47,223 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:45:47,225 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:45:47,226 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:45:47,228 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:45:47,229 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:45:47,230 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:45:47,237 (MainThread): Parsing macros\core.sql
+2019-02-08 10:45:47,241 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:45:47,244 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:45:47,253 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:45:47,262 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:45:47,265 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:45:47,268 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:45:47,280 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:45:47,283 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:45:47,284 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:45:47,291 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:45:47,292 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:45:47,297 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:45:47,317 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:45:47,321 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:45:47,326 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:45:47,334 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:45:47,337 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:45:47,349 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:45:47,357 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:45:47,365 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:45:47,373 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:45:47,380 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:45:47,387 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:45:47,388 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:45:47,389 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:45:47,391 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:45:47,392 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:45:47,393 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:45:47,394 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:45:47,396 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:45:47,397 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 10:45:47,409 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023655294E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023655294390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023655294AC8>]}
+2019-02-08 10:45:47,498 (MainThread): Flushing usage events
+2019-02-08 10:45:47,499 (MainThread): Encountered an error:
+2019-02-08 10:45:47,499 (MainThread): Compilation Error in model property_type_by_zipcode (models\property_type_by_zipcode.sql)
+  expected token ',', got 'max_records'
+    line 4
+      max_records=10)
+2019-02-08 10:46:02,095 (MainThread): Tracking: tracking
+2019-02-08 10:46:02,095 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FEE38A1BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FEE38A1C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FEE38A1940>]}
+2019-02-08 10:46:02,214 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 10:46:02,220 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 10:46:02,228 (MainThread): Parsing macros\core.sql
+2019-02-08 10:46:02,239 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:46:02,243 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:46:02,256 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:46:02,264 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:46:02,267 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:46:02,269 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:46:02,276 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:46:02,278 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:46:02,279 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:46:02,288 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:46:02,292 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:46:02,300 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:46:02,323 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:46:02,328 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:46:02,333 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:46:02,343 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:46:02,345 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:46:02,373 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:46:02,381 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:46:02,400 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:46:02,415 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:46:02,425 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:46:02,432 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:46:02,434 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:46:02,435 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:46:02,437 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:46:02,438 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:46:02,440 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:46:02,441 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:46:02,443 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:46:02,450 (MainThread): Parsing macros\core.sql
+2019-02-08 10:46:02,454 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:46:02,457 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:46:02,465 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:46:02,471 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:46:02,472 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:46:02,474 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:46:02,480 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:46:02,481 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:46:02,483 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:46:02,490 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:46:02,492 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:46:02,497 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:46:02,517 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:46:02,521 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:46:02,526 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:46:02,535 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:46:02,537 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:46:02,550 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:46:02,558 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:46:02,567 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:46:02,575 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:46:02,581 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:46:02,588 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:46:02,590 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:46:02,591 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:46:02,592 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:46:02,593 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:46:02,595 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:46:02,596 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:46:02,597 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:46:02,599 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 10:46:02,610 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FEE386C7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FEE386C400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FEE386C860>]}
+2019-02-08 10:46:02,718 (MainThread): Flushing usage events
+2019-02-08 10:46:02,718 (MainThread): Encountered an error:
+2019-02-08 10:46:02,719 (MainThread): Compilation Error in model property_type_by_zipcode (models\property_type_by_zipcode.sql)
+  unexpected '}'
+    line 12
+      {%set property_type_clean = property_type | lower |}
+2019-02-08 10:46:11,343 (MainThread): Tracking: tracking
+2019-02-08 10:46:11,343 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E334153CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3341539B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E334153C50>]}
+2019-02-08 10:46:11,454 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 10:46:11,464 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 10:46:11,472 (MainThread): Parsing macros\core.sql
+2019-02-08 10:46:11,478 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:46:11,482 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:46:11,493 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:46:11,500 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:46:11,503 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:46:11,504 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:46:11,512 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:46:11,514 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:46:11,515 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:46:11,523 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:46:11,529 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:46:11,544 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:46:11,568 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:46:11,573 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:46:11,579 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:46:11,588 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:46:11,591 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:46:11,611 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:46:11,619 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:46:11,628 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:46:11,637 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:46:11,647 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:46:11,653 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:46:11,654 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:46:11,655 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:46:11,657 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:46:11,658 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:46:11,660 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:46:11,661 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:46:11,663 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:46:11,670 (MainThread): Parsing macros\core.sql
+2019-02-08 10:46:11,676 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:46:11,679 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:46:11,689 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:46:11,695 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:46:11,697 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:46:11,698 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:46:11,703 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:46:11,705 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:46:11,706 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:46:11,714 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:46:11,716 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:46:11,721 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:46:11,745 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:46:11,748 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:46:11,753 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:46:11,761 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:46:11,763 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:46:11,776 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:46:11,783 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:46:11,792 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:46:11,799 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:46:11,806 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:46:11,813 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:46:11,814 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:46:11,815 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:46:11,817 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:46:11,818 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:46:11,819 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:46:11,820 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:46:11,822 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:46:11,823 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 10:46:11,846 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E33410AE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E33410A978>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E33411AA90>]}
+2019-02-08 10:46:11,938 (MainThread): Flushing usage events
+2019-02-08 10:46:11,938 (MainThread): Encountered an error:
+2019-02-08 10:46:48,160 (MainThread): Tracking: tracking
+2019-02-08 10:46:48,160 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025963583978>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025963583C18>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259635837F0>]}
+2019-02-08 10:46:48,338 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 10:46:48,344 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 10:46:48,350 (MainThread): Parsing macros\core.sql
+2019-02-08 10:46:48,356 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:46:48,360 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:46:48,372 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:46:48,380 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:46:48,382 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:46:48,384 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:46:48,391 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:46:48,393 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:46:48,394 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:46:48,401 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:46:48,404 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:46:48,411 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:46:48,435 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:46:48,439 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:46:48,460 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:46:48,493 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:46:48,500 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:46:48,520 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:46:48,530 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:46:48,545 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:46:48,553 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:46:48,562 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:46:48,569 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:46:48,570 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:46:48,571 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:46:48,573 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:46:48,574 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:46:48,575 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:46:48,577 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:46:48,578 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:46:48,585 (MainThread): Parsing macros\core.sql
+2019-02-08 10:46:48,589 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:46:48,592 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:46:48,600 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:46:48,606 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:46:48,607 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:46:48,609 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:46:48,615 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:46:48,617 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:46:48,618 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:46:48,625 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:46:48,627 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:46:48,631 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:46:48,654 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:46:48,657 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:46:48,662 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:46:48,671 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:46:48,673 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:46:48,687 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:46:48,696 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:46:48,706 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:46:48,714 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:46:48,722 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:46:48,729 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:46:48,731 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:46:48,733 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:46:48,735 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:46:48,736 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:46:48,738 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:46:48,739 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:46:48,740 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:46:48,742 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 10:46:48,755 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002596354BC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002596354B710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002596354B828>]}
+2019-02-08 10:46:48,851 (MainThread): Flushing usage events
+2019-02-08 10:46:48,851 (MainThread): Encountered an error:
+2019-02-08 10:47:06,546 (MainThread): Tracking: tracking
+2019-02-08 10:47:06,546 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB860236D8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB86023518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB86023A90>]}
+2019-02-08 10:47:06,643 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 10:47:06,648 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 10:47:06,654 (MainThread): Parsing macros\core.sql
+2019-02-08 10:47:06,659 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:47:06,663 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:47:06,675 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:47:06,681 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:47:06,683 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:47:06,685 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:47:06,692 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:47:06,694 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:47:06,695 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:47:06,702 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:47:06,705 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:47:06,714 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:47:06,736 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:47:06,740 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:47:06,746 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:47:06,756 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:47:06,758 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:47:06,772 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:47:06,780 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:47:06,789 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:47:06,796 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:47:06,805 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:47:06,812 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:47:06,813 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:47:06,814 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:47:06,816 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:47:06,817 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:47:06,819 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:47:06,820 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:47:06,822 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:47:06,829 (MainThread): Parsing macros\core.sql
+2019-02-08 10:47:06,832 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:47:06,836 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:47:06,843 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:47:06,849 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:47:06,850 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:47:06,852 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:47:06,857 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:47:06,859 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:47:06,860 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:47:06,867 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:47:06,869 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:47:06,874 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:47:06,902 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:47:06,906 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:47:06,911 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:47:06,920 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:47:06,922 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:47:06,938 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:47:06,953 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:47:06,961 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:47:06,968 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:47:06,975 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:47:06,982 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:47:06,983 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:47:06,984 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:47:06,987 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:47:06,987 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:47:06,989 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:47:06,990 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:47:06,991 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:47:06,993 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 10:47:07,005 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB86018630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB86018AC8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB86018898>]}
+2019-02-08 10:47:07,096 (MainThread): Flushing usage events
+2019-02-08 10:47:07,096 (MainThread): Encountered an error:
+2019-02-08 10:48:02,025 (MainThread): Tracking: tracking
+2019-02-08 10:48:02,025 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D98C722B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D98C72198>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D98C72898>]}
+2019-02-08 10:48:02,200 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 10:48:02,207 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 10:48:02,213 (MainThread): Parsing macros\core.sql
+2019-02-08 10:48:02,219 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:48:02,224 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:48:02,237 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:48:02,245 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:48:02,248 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:48:02,249 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:48:02,257 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:48:02,260 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:48:02,261 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:48:02,271 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:48:02,273 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:48:02,280 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:48:02,308 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:48:02,313 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:48:02,319 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:48:02,330 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:48:02,333 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:48:02,351 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:48:02,361 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:48:02,371 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:48:02,380 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:48:02,391 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:48:02,399 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:48:02,400 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:48:02,401 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:48:02,404 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:48:02,405 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:48:02,407 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:48:02,408 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:48:02,410 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:48:02,418 (MainThread): Parsing macros\core.sql
+2019-02-08 10:48:02,422 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:48:02,426 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:48:02,436 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:48:02,443 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:48:02,444 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:48:02,446 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:48:02,453 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:48:02,455 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:48:02,456 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:48:02,464 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:48:02,467 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:48:02,473 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:48:02,497 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:48:02,501 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:48:02,507 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:48:02,517 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:48:02,520 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:48:02,535 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:48:02,544 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:48:02,554 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:48:02,563 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:48:02,571 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:48:02,578 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:48:02,580 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:48:02,582 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:48:02,584 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:48:02,585 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:48:02,586 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:48:02,588 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:48:02,589 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:48:02,591 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 10:48:02,606 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D98D12630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D98C67DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D98C673C8>]}
+2019-02-08 10:48:02,709 (MainThread): Flushing usage events
+2019-02-08 10:48:02,710 (MainThread): Encountered an error:
+2019-02-08 10:48:38,856 (MainThread): Tracking: tracking
+2019-02-08 10:48:38,856 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C69129E8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C6912C88>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C6912860>]}
+2019-02-08 10:48:38,960 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 10:48:38,967 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 10:48:38,974 (MainThread): Parsing macros\core.sql
+2019-02-08 10:48:38,980 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:48:38,985 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:48:38,998 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:48:39,007 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:48:39,009 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:48:39,012 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:48:39,021 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:48:39,023 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:48:39,025 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:48:39,034 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:48:39,037 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:48:39,045 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:48:39,073 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:48:39,078 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:48:39,085 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:48:39,096 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:48:39,100 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:48:39,117 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:48:39,127 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:48:39,137 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:48:39,147 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:48:39,157 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:48:39,166 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:48:39,167 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:48:39,168 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:48:39,171 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:48:39,172 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:48:39,174 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:48:39,176 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:48:39,178 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:48:39,186 (MainThread): Parsing macros\core.sql
+2019-02-08 10:48:39,190 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 10:48:39,194 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 10:48:39,204 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 10:48:39,211 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 10:48:39,212 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 10:48:39,214 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 10:48:39,221 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 10:48:39,223 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 10:48:39,224 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 10:48:39,233 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 10:48:39,235 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 10:48:39,241 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 10:48:39,265 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 10:48:39,269 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 10:48:39,275 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 10:48:39,286 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 10:48:39,288 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 10:48:39,303 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 10:48:39,312 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 10:48:39,323 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 10:48:39,333 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 10:48:39,340 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 10:48:39,348 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 10:48:39,349 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 10:48:39,350 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 10:48:39,352 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 10:48:39,353 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 10:48:39,356 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 10:48:39,357 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 10:48:39,358 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 10:48:39,360 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 10:48:39,376 (MainThread): True
+2019-02-08 10:48:39,379 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C68DFD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C6994908>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C6994438>]}
+2019-02-08 10:48:39,477 (MainThread): Flushing usage events
+2019-02-08 10:48:39,478 (MainThread): Encountered an error:
+2019-02-08 10:48:39,478 (MainThread): 'bool' object is not iterable
+2019-02-08 10:48:39,487 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\run.py", line 24, in run
+    results = runner.run(query, ModelRunner)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\runner.py", line 243, in run
+    return self.run_from_graph(Selector, Runner, query)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\runner.py", line 197, in run_from_graph
+    manifest, linker = self.compile(self.config)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\runner.py", line 186, in compile
+    return compiler.compile()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\compilation.py", line 244, in compile
+    manifest = dbt.loader.GraphLoader.load_all(self.config, all_projects)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\loader.py", line 138, in load_all
+    return cls(project_config, all_projects).load()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\loader.py", line 118, in load
+    self._load_nodes()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\loader.py", line 66, in _load_nodes
+    self._load_sql_nodes(ModelParser, NodeType.Model, 'source_paths')
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\loader.py", line 45, in _load_sql_nodes
+    **kwargs
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\parser\base_sql.py", line 67, in load_and_parse
+    macros)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\parser\base_sql.py", line 96, in parse_sql_nodes
+    macros=macros)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\parser\base.py", line 116, in parse_node
+    capture_macros=True)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\clients\jinja.py", line 300, in get_rendered
+    return render_template(template, ctx, node)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\clients\jinja.py", line 287, in render_template
+    return template.render(ctx)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "dbt-faced9f4bcac5ffb1b78eb05", line 11, in top-level template code
+    l_0_property_types = missing
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\jinja2\runtime.py", line 425, in __init__
+    self._iterator = iter(iterable)
+TypeError: 'bool' object is not iterable
+
+2019-02-08 10:49:13,026 (MainThread): Tracking: tracking
+2019-02-08 10:49:13,027 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8F9E37F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8F9E3358>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8F9E3518>]}
+2019-02-08 10:49:13,564 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8F9CEDD8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8F9CE710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E8F9CE5F8>]}
+2019-02-08 10:49:13,664 (MainThread): Flushing usage events
+2019-02-08 10:49:13,664 (MainThread): Encountered an error:
+2019-02-08 10:49:13,665 (MainThread): 'dict' object has no attribute 'packages'
+2019-02-08 10:49:13,667 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\deps.py", line 440, in run
+    sub_deps.incorporate_from_yaml(target_config.packages.packages)
+AttributeError: 'dict' object has no attribute 'packages'
+
+2019-02-08 11:08:49,243 (MainThread): Tracking: tracking
+2019-02-08 11:08:49,243 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A0742908>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A0742BA8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A0742780>]}
+2019-02-08 11:08:49,393 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 11:08:49,398 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 11:08:49,399 (MainThread): Parsing macros\get_column_values_alphabetically.sql
+2019-02-08 11:08:49,408 (MainThread): Parsing macros\core.sql
+2019-02-08 11:08:49,413 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 11:08:49,418 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 11:08:49,430 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 11:08:49,437 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 11:08:49,439 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 11:08:49,441 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 11:08:49,448 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 11:08:49,450 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 11:08:49,451 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 11:08:49,460 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 11:08:49,463 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 11:08:49,470 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 11:08:49,494 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 11:08:49,498 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 11:08:49,504 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 11:08:49,514 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 11:08:49,516 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 11:08:49,531 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 11:08:49,539 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 11:08:49,548 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 11:08:49,556 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 11:08:49,565 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 11:08:49,572 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 11:08:49,573 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 11:08:49,574 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 11:08:49,576 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 11:08:49,577 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 11:08:49,579 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 11:08:49,580 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 11:08:49,582 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 11:08:49,584 (MainThread): Parsing macros\get_column_values_alphabetically.sql
+2019-02-08 11:08:49,591 (MainThread): Parsing macros\core.sql
+2019-02-08 11:08:49,595 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 11:08:49,599 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 11:08:49,607 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 11:08:49,613 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 11:08:49,614 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 11:08:49,616 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 11:08:49,622 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 11:08:49,623 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 11:08:49,624 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 11:08:49,632 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 11:08:49,634 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 11:08:49,640 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 11:08:49,660 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 11:08:49,664 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 11:08:49,669 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 11:08:49,678 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 11:08:49,680 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 11:08:49,693 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 11:08:49,701 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 11:08:49,710 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 11:08:49,718 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 11:08:49,726 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 11:08:49,732 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 11:08:49,734 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 11:08:49,735 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 11:08:49,737 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 11:08:49,738 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 11:08:49,739 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 11:08:49,740 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 11:08:49,742 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 11:08:49,743 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 11:08:49,770 (MainThread): []
+2019-02-08 11:08:49,797 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_learn.example
+
+2019-02-08 11:08:49,802 (MainThread): Found 1 models, 0 tests, 0 archives, 0 analyses, 95 macros, 2 operations, 0 seed files
+2019-02-08 11:08:49,803 (MainThread): 
+2019-02-08 11:08:49,803 (MainThread): 11:08:49 | Concurrency: 4 threads (target='dev')
+2019-02-08 11:08:49,804 (MainThread): 11:08:49 | 
+2019-02-08 11:08:49,809 (Thread-1): Compiling model.dbt_learn.property_type_by_zipcode
+2019-02-08 11:08:49,816 (Thread-1): Acquiring new redshift connection "property_type_by_zipcode".
+2019-02-08 11:08:49,816 (Thread-1): Opening a new connection (0 currently allocated)
+2019-02-08 11:08:49,817 (Thread-1): Connecting to Redshift using 'database' credentials
+2019-02-08 11:08:50,578 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:08:50,578 (Thread-1): On property_type_by_zipcode: BEGIN
+2019-02-08 11:08:50,616 (Thread-1): SQL status: BEGIN in 0.04 seconds
+2019-02-08 11:08:50,617 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:08:50,617 (Thread-1): On property_type_by_zipcode: 
+
+        select
+            property_type as value
+
+        from source_data.listings
+        group by 1
+        order by 1
+
+        
+        limit 10
+        
+2019-02-08 11:08:50,640 (Thread-1): SQL status: SELECT in 0.02 seconds
+2019-02-08 11:08:50,647 (Thread-1): ['Apartment', 'Bed and breakfast', 'Boutique hotel', 'Bungalow', 'Camper/RV', 'Castle', 'Condominium', 'Cottage', 'Farm stay', 'Guest suite']
+2019-02-08 11:08:50,650 (Thread-1): Writing injected SQL for node "model.dbt_learn.property_type_by_zipcode"
+2019-02-08 11:08:50,654 (Thread-1): On property_type_by_zipcode: ROLLBACK
+2019-02-08 11:08:50,719 (MainThread): 11:08:50 | Done.
+2019-02-08 11:08:50,719 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002579CF55BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002579EB23518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002579DD5A898>]}
+2019-02-08 11:08:50,818 (MainThread): Flushing usage events
+2019-02-08 11:09:26,617 (MainThread): Tracking: tracking
+2019-02-08 11:09:26,617 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A43172978>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A43172C18>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A431727F0>]}
+2019-02-08 11:09:26,731 (MainThread): Loading dependency project from c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\include
+2019-02-08 11:09:26,738 (MainThread): Loading dependency project from C:\users\yichy\dbt-learn\dbt_modules
+2019-02-08 11:09:26,739 (MainThread): Parsing macros\get_column_values_alphabetically.sql
+2019-02-08 11:09:26,750 (MainThread): Parsing macros\core.sql
+2019-02-08 11:09:26,754 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 11:09:26,759 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 11:09:26,771 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 11:09:26,778 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 11:09:26,781 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 11:09:26,782 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 11:09:26,790 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 11:09:26,792 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 11:09:26,793 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 11:09:26,802 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 11:09:26,805 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 11:09:26,812 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 11:09:26,838 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 11:09:26,843 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 11:09:26,849 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 11:09:26,860 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 11:09:26,863 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 11:09:26,879 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 11:09:26,888 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 11:09:26,897 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 11:09:26,905 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 11:09:26,915 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 11:09:26,922 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 11:09:26,923 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 11:09:26,924 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 11:09:26,926 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 11:09:26,927 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 11:09:26,929 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 11:09:26,931 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 11:09:26,932 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 11:09:26,934 (MainThread): Parsing macros\get_column_values_alphabetically.sql
+2019-02-08 11:09:26,943 (MainThread): Parsing macros\core.sql
+2019-02-08 11:09:26,947 (MainThread): Parsing macros\adapters\bigquery.sql
+2019-02-08 11:09:26,950 (MainThread): Parsing macros\adapters\common.sql
+2019-02-08 11:09:26,959 (MainThread): Parsing macros\adapters\redshift.sql
+2019-02-08 11:09:26,964 (MainThread): Parsing macros\adapters\snowflake.sql
+2019-02-08 11:09:26,966 (MainThread): Parsing macros\catalog\postgres_catalog.sql
+2019-02-08 11:09:26,968 (MainThread): Parsing macros\catalog\redshift_catalog.sql
+2019-02-08 11:09:26,974 (MainThread): Parsing macros\catalog\snowflake_catalog.sql
+2019-02-08 11:09:26,975 (MainThread): Parsing macros\etc\bigquery.sql
+2019-02-08 11:09:26,976 (MainThread): Parsing macros\etc\datetime.sql
+2019-02-08 11:09:26,983 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2019-02-08 11:09:26,985 (MainThread): Parsing macros\materializations\helpers.sql
+2019-02-08 11:09:26,991 (MainThread): Parsing macros\materializations\archive\archive.sql
+2019-02-08 11:09:27,013 (MainThread): Parsing macros\materializations\common\merge.sql
+2019-02-08 11:09:27,016 (MainThread): Parsing macros\materializations\incremental\bigquery_incremental.sql
+2019-02-08 11:09:27,022 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2019-02-08 11:09:27,031 (MainThread): Parsing macros\materializations\seed\bigquery.sql
+2019-02-08 11:09:27,034 (MainThread): Parsing macros\materializations\seed\seed.sql
+2019-02-08 11:09:27,047 (MainThread): Parsing macros\materializations\table\bigquery_table.sql
+2019-02-08 11:09:27,056 (MainThread): Parsing macros\materializations\table\snowflake_table.sql
+2019-02-08 11:09:27,066 (MainThread): Parsing macros\materializations\table\table.sql
+2019-02-08 11:09:27,074 (MainThread): Parsing macros\materializations\view\bq_snowflake_view.sql
+2019-02-08 11:09:27,083 (MainThread): Parsing macros\materializations\view\view.sql
+2019-02-08 11:09:27,089 (MainThread): Parsing macros\operations\catalog\get_catalog.sql
+2019-02-08 11:09:27,091 (MainThread): Parsing macros\operations\relations\get_relations.sql
+2019-02-08 11:09:27,092 (MainThread): Parsing macros\relations\postgres_relations.sql
+2019-02-08 11:09:27,094 (MainThread): Parsing macros\relations\redshift_relations.sql
+2019-02-08 11:09:27,095 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2019-02-08 11:09:27,097 (MainThread): Parsing macros\schema_tests\not_null.sql
+2019-02-08 11:09:27,098 (MainThread): Parsing macros\schema_tests\relationships.sql
+2019-02-08 11:09:27,099 (MainThread): Parsing macros\schema_tests\unique.sql
+2019-02-08 11:09:27,101 (MainThread): Parsing model.dbt_learn.property_type_by_zipcode
+2019-02-08 11:09:27,130 (MainThread): []
+2019-02-08 11:09:27,158 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_learn.example
+
+2019-02-08 11:09:27,163 (MainThread): Found 1 models, 0 tests, 0 archives, 0 analyses, 95 macros, 2 operations, 0 seed files
+2019-02-08 11:09:27,164 (MainThread): 
+2019-02-08 11:09:27,165 (MainThread): Acquiring new redshift connection "master".
+2019-02-08 11:09:27,165 (MainThread): Opening a new connection (0 currently allocated)
+2019-02-08 11:09:27,166 (MainThread): Connecting to Redshift using 'database' credentials
+2019-02-08 11:09:27,874 (MainThread): Using redshift connection "master".
+2019-02-08 11:09:27,875 (MainThread): On master: select tablename as name, schemaname as schema, 'table' as type from pg_tables
+        where schemaname ilike 'dbt_alex'
+        union all
+        select viewname as name, schemaname as schema, 'view' as type from pg_views
+        where schemaname ilike 'dbt_alex'
+2019-02-08 11:09:27,923 (MainThread): SQL status: SELECT in 0.05 seconds
+2019-02-08 11:09:27,955 (MainThread): Acquiring new redshift connection "get_relations_data".
+2019-02-08 11:09:27,955 (MainThread): Opening a new connection (1 currently allocated)
+2019-02-08 11:09:27,956 (MainThread): Connecting to Redshift using 'database' credentials
+2019-02-08 11:09:28,083 (MainThread): Using redshift connection "get_relations_data".
+2019-02-08 11:09:28,083 (MainThread): On get_relations_data: BEGIN
+2019-02-08 11:09:28,117 (MainThread): SQL status: BEGIN in 0.03 seconds
+2019-02-08 11:09:28,118 (MainThread): Using redshift connection "get_relations_data".
+2019-02-08 11:09:28,118 (MainThread): On get_relations_data: -- 
+    with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg_%'
+    ),
+    relationships as (
+        select
+            referenced_class.name as referenced_name,
+            referenced_class.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced_class.kind as kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        join dependency on relation.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            referenced_class.kind in ('r', 'v') and
+            (referenced_class.name != dependent_class.name or
+             referenced_class.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2019-02-08 11:09:28,161 (MainThread): SQL status: SELECT in 0.04 seconds
+2019-02-08 11:09:28,170 (MainThread): On get_relations_data: ROLLBACK
+2019-02-08 11:09:28,189 (MainThread): Using redshift connection "master".
+2019-02-08 11:09:28,189 (MainThread): On master: select distinct nspname from pg_namespace
+2019-02-08 11:09:28,207 (MainThread): SQL status: SELECT in 0.02 seconds
+2019-02-08 11:09:28,207 (MainThread): 11:09:28 | Concurrency: 4 threads (target='dev')
+2019-02-08 11:09:28,208 (MainThread): 11:09:28 | 
+2019-02-08 11:09:28,211 (Thread-1): 11:09:28 | 1 of 1 START view model dbt_alex.property_type_by_zipcode............ [RUN]
+2019-02-08 11:09:28,213 (Thread-1): Compiling model.dbt_learn.property_type_by_zipcode
+2019-02-08 11:09:28,219 (Thread-1): Acquiring new redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,219 (Thread-1): Re-using an available connection from the pool.
+2019-02-08 11:09:28,220 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,220 (Thread-1): On property_type_by_zipcode: BEGIN
+2019-02-08 11:09:28,255 (Thread-1): SQL status: BEGIN in 0.03 seconds
+2019-02-08 11:09:28,255 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,255 (Thread-1): On property_type_by_zipcode: 
+
+        select
+            property_type as value
+
+        from source_data.listings
+        group by 1
+        order by 1
+
+        
+        limit 10
+        
+2019-02-08 11:09:28,274 (Thread-1): SQL status: SELECT in 0.02 seconds
+2019-02-08 11:09:28,275 (Thread-1): ['Apartment', 'Bed and breakfast', 'Boutique hotel', 'Bungalow', 'Camper/RV', 'Castle', 'Condominium', 'Cottage', 'Farm stay', 'Guest suite']
+2019-02-08 11:09:28,278 (Thread-1): Writing injected SQL for node "model.dbt_learn.property_type_by_zipcode"
+2019-02-08 11:09:28,315 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,315 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,315 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,337 (Thread-1): SQL status: COMMIT in 0.02 seconds
+2019-02-08 11:09:28,338 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,338 (Thread-1): On property_type_by_zipcode: BEGIN
+2019-02-08 11:09:28,354 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-08 11:09:28,355 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,355 (Thread-1): On property_type_by_zipcode: drop view if exists "dbt_alex"."property_type_by_zipcode__dbt_tmp" cascade
+2019-02-08 11:09:28,372 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2019-02-08 11:09:28,372 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,372 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,372 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,450 (Thread-1): SQL status: COMMIT in 0.08 seconds
+2019-02-08 11:09:28,450 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,450 (Thread-1): On property_type_by_zipcode: BEGIN
+2019-02-08 11:09:28,469 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-08 11:09:28,470 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,470 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,470 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,486 (Thread-1): SQL status: COMMIT in 0.02 seconds
+2019-02-08 11:09:28,487 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,487 (Thread-1): On property_type_by_zipcode: BEGIN
+2019-02-08 11:09:28,505 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-08 11:09:28,506 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,506 (Thread-1): On property_type_by_zipcode: drop view if exists "dbt_alex"."property_type_by_zipcode__dbt_backup" cascade
+2019-02-08 11:09:28,525 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2019-02-08 11:09:28,525 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,525 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,525 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,607 (Thread-1): SQL status: COMMIT in 0.08 seconds
+2019-02-08 11:09:28,607 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,607 (Thread-1): On property_type_by_zipcode: BEGIN
+2019-02-08 11:09:28,624 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-08 11:09:28,644 (Thread-1): Writing runtime SQL for node "model.dbt_learn.property_type_by_zipcode"
+2019-02-08 11:09:28,646 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,647 (Thread-1): On property_type_by_zipcode: 
+
+  create view "dbt_alex"."property_type_by_zipcode__dbt_tmp" as (
+    
+
+
+
+select
+   zipcode,
+   
+       
+
+       sum(case when property_type = 'Apartment' then 1 else 0 end)
+          as apartment_count,
+       
+
+       sum(case when property_type = 'Bed and breakfast' then 1 else 0 end)
+          as bed_and_breakfast_count,
+       
+
+       sum(case when property_type = 'Boutique hotel' then 1 else 0 end)
+          as boutique_hotel_count,
+       
+
+       sum(case when property_type = 'Bungalow' then 1 else 0 end)
+          as bungalow_count,
+       
+
+       sum(case when property_type = 'Camper/RV' then 1 else 0 end)
+          as camper_rv_count,
+       
+
+       sum(case when property_type = 'Castle' then 1 else 0 end)
+          as castle_count,
+       
+
+       sum(case when property_type = 'Condominium' then 1 else 0 end)
+          as condominium_count,
+       
+
+       sum(case when property_type = 'Cottage' then 1 else 0 end)
+          as cottage_count,
+       
+
+       sum(case when property_type = 'Farm stay' then 1 else 0 end)
+          as farm_stay_count,
+       
+
+       sum(case when property_type = 'Guest suite' then 1 else 0 end)
+          as guest_suite_count
+
+
+from source_data.listings
+
+group by 1
+
+limit 100
+  ) ;
+2019-02-08 11:09:28,675 (Thread-1): SQL status: CREATE VIEW in 0.03 seconds
+2019-02-08 11:09:28,678 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,678 (Thread-1): On property_type_by_zipcode: alter table "dbt_alex"."property_type_by_zipcode" rename to "property_type_by_zipcode__dbt_backup"
+2019-02-08 11:09:28,695 (Thread-1): SQL status: ALTER TABLE in 0.02 seconds
+2019-02-08 11:09:28,697 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,697 (Thread-1): On property_type_by_zipcode: alter table "dbt_alex"."property_type_by_zipcode__dbt_tmp" rename to "property_type_by_zipcode"
+2019-02-08 11:09:28,715 (Thread-1): SQL status: ALTER TABLE in 0.02 seconds
+2019-02-08 11:09:28,715 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,715 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,715 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,852 (Thread-1): SQL status: COMMIT in 0.14 seconds
+2019-02-08 11:09:28,852 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,852 (Thread-1): On property_type_by_zipcode: BEGIN
+2019-02-08 11:09:28,868 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-08 11:09:28,869 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,869 (Thread-1): On property_type_by_zipcode: drop view if exists "dbt_alex"."property_type_by_zipcode__dbt_backup" cascade
+2019-02-08 11:09:28,891 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2019-02-08 11:09:28,891 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:28,891 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:28,891 (Thread-1): On property_type_by_zipcode: COMMIT
+2019-02-08 11:09:29,002 (Thread-1): SQL status: COMMIT in 0.11 seconds
+2019-02-08 11:09:29,003 (Thread-1): Using redshift connection "property_type_by_zipcode".
+2019-02-08 11:09:29,003 (Thread-1): On property_type_by_zipcode: BEGIN
+2019-02-08 11:09:29,020 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2019-02-08 11:09:29,022 (Thread-1): On property_type_by_zipcode: ROLLBACK
+2019-02-08 11:09:29,040 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5686a74b-e91a-4626-ba63-1e15bbd8ee2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A43172940>]}
+2019-02-08 11:09:29,136 (Thread-1): 11:09:29 | 1 of 1 OK created view model dbt_alex.property_type_by_zipcode....... [CREATE VIEW in 0.83s]
+2019-02-08 11:09:29,222 (MainThread): 11:09:29 | 
+2019-02-08 11:09:29,222 (MainThread): 11:09:29 | Finished running 1 view models in 2.06s.
+2019-02-08 11:09:29,223 (MainThread): Connection 'master' was left open.
+2019-02-08 11:09:29,229 (MainThread): 
+2019-02-08 11:09:29,229 (MainThread): Completed successfully
+2019-02-08 11:09:29,230 (MainThread): 
+Done. PASS=1 ERROR=0 SKIP=0 TOTAL=1
+2019-02-08 11:09:29,234 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A431B4E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A41553518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A408B93C8>]}
+2019-02-08 11:09:29,336 (MainThread): Flushing usage events
