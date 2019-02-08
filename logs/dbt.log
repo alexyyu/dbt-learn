@@ -2185,3 +2185,26 @@ limit 100
 Done. PASS=1 ERROR=0 SKIP=0 TOTAL=1
 2019-02-08 09:52:31,699 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210D3CE47F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210D13A93C8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210D3C1A1D0>]}
 2019-02-08 09:52:31,794 (MainThread): Flushing usage events
+2019-02-08 10:11:28,461 (MainThread): Tracking: tracking
+2019-02-08 10:11:28,461 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014001812208>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014001812160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014001812400>]}
+2019-02-08 10:11:28,671 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001407EE5B898>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001407CF85CF8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001407EF86518>]}
+2019-02-08 10:11:28,773 (MainThread): Flushing usage events
+2019-02-08 10:21:28,749 (MainThread): Tracking: tracking
+2019-02-08 10:21:28,749 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DE02FF98>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DE02FA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DE02F0B8>]}
+2019-02-08 10:21:29,258 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DE01A208>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DE01AB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000298DE01AF28>]}
+2019-02-08 10:21:29,343 (MainThread): Flushing usage events
+2019-02-08 10:21:29,343 (MainThread): Encountered an error:
+2019-02-08 10:21:29,344 (MainThread): 'dict' object has no attribute 'packages'
+2019-02-08 10:21:29,346 (MainThread): Traceback (most recent call last):
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 76, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 126, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 181, in run_from_args
+    results = run_from_task(task, cfg, parsed)
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\main.py", line 189, in run_from_task
+    result = task.run()
+  File "c:\users\yichy\appdata\local\programs\python\python36\lib\site-packages\dbt\task\deps.py", line 440, in run
+    sub_deps.incorporate_from_yaml(target_config.packages.packages)
+AttributeError: 'dict' object has no attribute 'packages'
+
