@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_listings
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+      - name: host_id
+        tests:
+          - not_null
+models:
+  - name: stg_listing_history
+    columns:
+      - name: listing_id
+        tests:
+          - not_null
+          - unique
+models:
+  - name: stg_reviews
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+      - name: host_id
+        tests:
+          - not_null
