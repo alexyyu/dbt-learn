@@ -1,12 +1,17 @@
-{% set property_type = dbt_utils.get_column_value(table='source_data') %}
+{% set property_types = dbt_utils.get_column_values(
+  table="source_data.listings",
+  column ='property_type'
+max_records=10)
+%}
 
-{{ log(property_type, info=True)}}
+{{ log(property_types, info=True)}}
 
 select
     zipcode,
-    {% for property_type in ['house','apartment','townhouse'] %}
+    {% for property_type in property_types %}
+    {%set property_type_clean = property_type | lower |}
+    replace（“ ”， “_")|repalce（“ ”， “/") %}
 
-    -- writing sql using jinja instead of repeating the case when clause
     sum(case when lower(property_type) = '{{property_type}}' then 1 else 0 end) as {{property_type}}_count
 
     {{- "," if not loop.last -}}
