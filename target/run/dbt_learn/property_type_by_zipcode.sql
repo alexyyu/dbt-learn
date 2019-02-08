@@ -1,4 +1,7 @@
-select
+
+
+  create view "dbt_alex"."property_type_by_zipcode__dbt_tmp" as (
+    select
     zipcode,
     
     -- writing sql using jinja instead of repeating the case when clause
@@ -13,3 +16,4 @@ from source_data.listings
 group by 1
 
 limit 100
+  ) ;
