@@ -18,6 +18,9 @@ models:
         tests:
           - not_null
           - unique
+          - relationships:
+              to: ref('stg_listings')
+              field: listing_id
 models:
   - name: stg_reviews
     columns:
